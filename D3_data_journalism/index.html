@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>D3Times</title>
+  <title>D3 and Data Journalism</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/d3Style.css">
@@ -14,31 +14,41 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-12">
-        <h1>D3Times</h1>
+        <h1>D3 and Data Journalism</h1>
+        <hr>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12  col-md-9">
         <div id="scatter">
           <!-- We append our chart here. -->
+          <div class="chart">
+          </div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12  col-md-9">
         <div class="article">
-          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <h2><center>Correlations Discovered Between<br>
+            Median Income and Obesity</center></h2>
+          <p>It is well known that poorer Americans are more likely to be obese or suffer from diabetes; 
+            there is a strong negative correlation between household income and both obesity and diabetes. 
+            This negative correlation, however, has only developed in the past 30 years, according to 
+            researchers in Tennessee and London. Since 1990, the rise of obesity and diabetes was fastest 
+            among the poorest U.S. regions, says Alexander Bentley of the University of Tennessee in the US. 
+            The timing also fits with the generations exposed to high fructose corn syrup in foodstuffs and drinks, 
+            says Bentley, who is the lead author of a study in the journal Palgrave Communications.</p>
 
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <p>Experts describe the unprecedented rise in obesity in recent history as the most rapid change ever 
+              seen in human physiology. Only a century ago, obesity was a phenomenon almost unknown to citizens of 
+              the US and other developed countries.</p>
 
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <p>"The data point to a developing trend that was not present in 1990. This negative correlation has evolved 
+              steadily over recent decades," explains Bentley. "By 2015 the situation was such that members of lower 
+              income households had a much greater chance of suffering from obesity and diabetes."</p>
+
+              <p>Text from <a href="https://www.sciencedaily.com/releases/2018/12/181211103139.htm">Science Daily</a></p>
         </div>
       </div>
     </div>
@@ -46,13 +56,14 @@
 
   <!-- Footer-->
   <div id="footer">
-    <p>The Coding Boot Camp&copy;2016</p>
+    <p>Kate Mikkelson&copy;2019</p>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
 
 </body>
 
