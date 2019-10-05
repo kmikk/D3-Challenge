@@ -90,14 +90,24 @@ d3.csv("assets/data/data.csv").then(function(healthData) {
       .attr("fill", "blue")
       .attr("opacity", ".5")
 
-    circlesGroup.append("circle")
+
+    // Circle Labels
+    var circlesText = chartGroup.selectAll("stateText")
       .data(healthData)
-      .classed("stateText", true)
-      .attr("x", d => xLinearScale(d.income))
-      .attr("y", d => yLinearScale(d.obesity))
-      .attr("stroke", "red")
+      .enter()
+      .append("text")
+      .text(function (d) {
+        return d.abbr;
+      })
+      .attr("x", function (d) {
+        return xLinearScale(d.income);
+      })
+      .attr("y", function (d) {
+        return yLinearScale(d.obesity);     
+      })
       .attr("font-size", "10px")
-      .text(d => d.abbr);
+      .attr("text-anchor", "middle")
+      .attr("fill", "white");
    
 
     // Step 6: Initialize tool tip
